@@ -1,5 +1,5 @@
 import java.util.*;
-public class HighLowGame{
+public class AkitaMain{
 	public static void main(String[] args){
 		int pcn = new Random().nextInt(99)+1;
 		int count = 0;
