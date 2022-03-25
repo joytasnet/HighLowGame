@@ -7,12 +7,11 @@ import java.util.*; public class Matsuoka{
 		usernum=new Scanner(System.in).nextInt();
 		count++;
 		do{
+			count++;
 			if(usernum>randomnum){
 				System.out.println("もっとしただよ～");
-				count++;
 			}else{
 				System.out.println("もっとうえだよ～");
-				count++;
 			}
 				System.out.print("いくつかな？>>");
 				usernum=new Scanner(System.in).nextInt();
