@@ -15,6 +15,7 @@ public class SasakiMain{
 				System.out.println("もっと下だよ");
 			}
 		}while(ans != correct);
+		System.out.println("正解！");
 		System.out.println(count + "回で正解したよ");
 	}
 }
