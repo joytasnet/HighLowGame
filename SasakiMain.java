@@ -11,8 +11,10 @@ public class SasakiMain{
 			ans = new Scanner(System.in).nextInt();
 			if(ans < correct){
 				System.out.println("もっと上だよ");
-			}else{
+			}else if(ans > correct){
 				System.out.println("もっと下だよ");
+			}else{
+				break;
 			}
 		}while(ans != correct);
 		System.out.println("正解！");
