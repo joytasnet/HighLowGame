@@ -13,8 +13,6 @@ public class SasakiMain{
 				System.out.println("もっと上だよ");
 			}else if(ans > correct){
 				System.out.println("もっと下だよ");
-			}else{
-				break;
 			}
 		}while(ans != correct);
 		System.out.println("正解！");
