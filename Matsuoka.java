@@ -3,19 +3,18 @@ import java.util.*; public class Matsuoka{
 		int randomnum,count=0,usernum;
 		System.out.println("1~99の乱数を生成したよ");
 		randomnum=new Random().nextInt(99)+1;
-		System.out.print("いくつかな？>>");
-		usernum=new Scanner(System.in).nextInt();
-		count++;
 		do{
+			System.out.print("いくつかな？>>");
+			usernum=new Scanner(System.in).nextInt();
 			count++;
+			if(usernum==randomnum){
+				System.out.println(count+"回で正解");
+			}
 			if(usernum>randomnum){
 				System.out.println("もっとしただよ～");
 			}else{
 				System.out.println("もっとうえだよ～");
 			}
-				System.out.print("いくつかな？>>");
-				usernum=new Scanner(System.in).nextInt();
 		}while(randomnum!=usernum);
-		System.out.println(count+"回で正解");
 	}
 }
