@@ -12,7 +12,7 @@ public class HighLowGame{
 				System.out.println("もっと上だよ");
 			}else if(pcn < pln){
 				System.out.println("もっと下だよ");
-			}else if(pcn == pln){
+			}else{
 				System.out.println("正解！");
 				break;
 			}
