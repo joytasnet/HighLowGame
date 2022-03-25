@@ -7,14 +7,15 @@ public class NagasuMain{
 		while(true){
 			count++;
 			int suji = new Scanner(System.in).nextInt();
-				if( atari == suji){
-					System.out.println(suji + " 正解！ " + count + "回で正解したよ。");
-					break;
-				}else if( atari >= suji){
-					System.out.print("もっと上だよ いくつかな?>> ");
-				}else{
-					System.out.print("もっと下だよ いくつかな?>> ");
-				}
+			if( atari == suji){
+				System.out.println("正解！");
+				System.out.println(count + "回で正解したよ。");
+				break;
+			}else if( atari >= suji){
+				System.out.print("もっと上だよ いくつかな?>> ");
+			}else{
+				System.out.print("もっと下だよ いくつかな?>> ");
+			}
 		}
 	}
 }
