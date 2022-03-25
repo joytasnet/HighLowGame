@@ -9,8 +9,7 @@ import java.util.*; public class Matsuoka{
 			count++;
 			if(usernum==randomnum){
 				System.out.println(count+"回で正解");
-			}
-			if(usernum>randomnum){
+			}else if(usernum>randomnum){
 				System.out.println("もっとしただよ～");
 			}else{
 				System.out.println("もっとうえだよ～");
