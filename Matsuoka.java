@@ -5,17 +5,18 @@ import java.util.*; public class Matsuoka{
 		randomnum=new Random().nextInt(99)+1;
 		System.out.print("いくつかな？>>");
 		usernum=new Scanner(System.in).nextInt();
+		count++;
 		do{
 			if(usernum>randomnum){
 				System.out.println("もっとしただよ～");
-				System.out.print("いくつかな？>>");
-				usernum=new Scanner(System.in).nextInt();
-			}else if(usernum<randomnum){
+				count++;
+			}else{
 				System.out.println("もっとうえだよ～");
+				count++;
+			}
 				System.out.print("いくつかな？>>");
 				usernum=new Scanner(System.in).nextInt();
-			}
 		}while(randomnum!=usernum);
-		System.out.println("正解");
+		System.out.println(count+"回で正解");
 	}
 }
